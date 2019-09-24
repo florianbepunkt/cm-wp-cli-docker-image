@@ -9,3 +9,5 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
 USER www-data
+
+RUN wp package install front/wp-cli-build
