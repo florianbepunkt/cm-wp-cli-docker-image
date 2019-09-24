@@ -10,4 +10,4 @@ RUN apk update && apk upgrade && \
 
 # USER www-data
 
-RUN wp package install front/wp-cli-build
+RUN wp package install front/wp-cli-build --allow-root
