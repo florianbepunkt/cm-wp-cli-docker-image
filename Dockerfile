@@ -2,7 +2,7 @@ FROM wordpress:cli
 
 USER root
 
-ENV PHP_INI_MEMORY_LIMIT 1024M
+ENV PHP_INI_MEMORY_LIMIT 2048M
 RUN echo 'memory_limit = ${PHP_INI_MEMORY_LIMIT}' > "$PHP_INI_DIR/php.ini"
 
 RUN apk update && apk upgrade && \
