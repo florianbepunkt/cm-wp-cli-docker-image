@@ -8,6 +8,6 @@ RUN echo 'memory_limit = ${PHP_INI_MEMORY_LIMIT}' > "$PHP_INI_DIR/php.ini"
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
-# USER www-data
+USER www-data
 
 RUN wp package install front/wp-cli-build --allow-root
